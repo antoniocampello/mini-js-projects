@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TO-DO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="create">
+            <h1>Create Task</h1>
+            <form action="#" method="post" id="form" name="form">
+                <label for="task">Enter the tasks to be added to the list here.</label>
+                <input type="text" name="task" id="task" autocomplete="off">
+                <button type="button" id="btn-add">Add Task</button>
+            </form>
+        </section>
+        <section id="read">
+            <h1>Task List</h1>
+            <div id="list"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
