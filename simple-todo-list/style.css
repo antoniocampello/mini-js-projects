@@ -25,26 +25,26 @@ main {
     padding: 20px;
 }
 
-#create form {
+#create section {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#create form input {
+#create section input {
     padding: 10px;
 }
 
-#create form input:focus {
+#create section input:focus {
     outline: none;
 }
 
-#create form button {
+#create section button {
     padding: 5px;
 
 }
 
-#create form button:hover {
+#create section button:hover {
     cursor: pointer;
 }
 

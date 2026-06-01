@@ -19,7 +19,7 @@ function createItem(text) { // Create the div element in DOM
     return div
 }
 
-button.addEventListener("click", () => {
+function addTask() { // Add the Task to the array and to the DOM list
     if (!validateTask(input.value)) return 
 
     let div = createItem(input.value)
@@ -54,7 +54,7 @@ button.addEventListener("click", () => {
         tasks = tasks.filter(t => t !== p.textContent)
         div.remove()
     })
-})
+}
 
 function validateTask(text) {
     let task = text.trim()
@@ -70,3 +70,12 @@ function validateTask(text) {
 
     return true
 }
+
+button.addEventListener("click", () => {
+    addTask()
+})
+
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter")
+        addTask()
+})
